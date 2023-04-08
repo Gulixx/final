@@ -1,0 +1,17 @@
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 7vw;
+    
+    &_img_link{
+        padding: 0;
+        margin: 30px;
+    }
+}
+
+.carta{
+    border-radius:10px;
+    height: 20vw;
+    padding: 0;
+}

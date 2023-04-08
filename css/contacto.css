@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Poppins:wght@100&family=Roboto:wght@300&display=swap");
+* {
+  font-family: "Nunito", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #333 !important;
+}
+
+.navbar {
+  background-color: #222;
+  height: 90px;
+  position: fixed;
+  z-index: 100;
+}
+.navbar_logo-img {
+  height: 80px;
+  transition: 0.3s ease all;
+}
+.navbar_logo-img:hover {
+  transform: scale(1.05);
+}
+.navbar .nav-link {
+  color: white;
+  padding: 32px;
+  background: linear-gradient(to right, rgb(33, 33, 33), rgb(33, 33, 33)), linear-gradient(to right, rgb(255, 0, 0), rgb(255, 0, 180), rgb(0, 100, 200));
+  background-size: 100% 1px, 0 1px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+.navbar .nav-link:hover {
+  background-size: 0 1px, 100% 1px;
+}
+
+.nav-item {
+  justify-content: space-around;
+}
+
+@media (max-width: 600px) {
+  nav {
+    position: absolute;
+    z-index: 100;
+  }
+  .navbar {
+    height: auto;
+    text-align: center;
+  }
+  .nav-link:hover {
+    background-color: #222 !important;
+  }
+}
+body {
+  background: #007bff;
+  background: #333;
+}
+
+.bg-image {
+  background-image: url("https://media.tenor.com/tsfHyLoU0cMAAAAd/chopper-one-piece-chopper.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*# sourceMappingURL=contacto.css.map */

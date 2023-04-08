@@ -1,0 +1,72 @@
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+
+
+@media (max-width: 2000px){ 
+
+h1{
+    text-align: center !important;
+    padding-bottom: 30px;
+    color: white;
+}
+
+.section{
+
+        &_img{
+            border-radius: 30px;
+            transition: .3s ease all;
+            box-shadow: 6px 6px 28px -8px rgba(0,0,0,0.6);
+        }
+
+         &_img:hover{
+            transform: scale(1.1);
+        }
+
+        &_capa{
+                position: absolute;
+                top: 10px;
+                left: 10px;
+            }
+
+            &_h1{
+                background-color: #222;
+                position: relative;
+                text-align: center;
+                transition: .3s ease all;
+            }
+
+            &_h1:hover{
+                transform: scale(1.1);
+            }
+            &-img{
+               
+                border-radius: 30px;
+                transition: .3s ease all;
+            }
+
+            &_a{
+                padding: 0;
+            }
+        }
+    }
+
+    p{
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+
+    .scroll{
+        -webkit-mask-image: linear-gradient(to right, #0000, #000, #000, #0000);
+        overflow-x: auto;
+        overscroll-behavior-x: contain;
+        display: flex;
+        align-items: start;
+      }
+      
+      .scroll > div {
+        block-size: var(--size-15);
+        aspect-ratio: var(--ratio-square);
+
+      }
+      
