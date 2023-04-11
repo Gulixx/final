@@ -229,6 +229,10 @@ h1 {
     height: 400px;
   }
 }
+.hero-texto {
+  cursor: default;
+}
+
 .hero-image {
   padding-top: 30px;
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
