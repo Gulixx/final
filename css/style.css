@@ -18,6 +18,7 @@ body {
   z-index: 100;
 }
 .navbar_logo-img {
+  padding: 0;
   height: 80px;
   transition: 0.3s ease all;
 }
@@ -28,7 +29,7 @@ body {
   color: white;
   padding: 32px;
   background: linear-gradient(to right, rgb(33, 33, 33), rgb(33, 33, 33)), linear-gradient(to right, rgb(255, 0, 0), rgb(255, 0, 180), rgb(0, 100, 200));
-  background-size: 100% 1px, 0 1px;
+  background-size: 100% 0px, 0 0px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
   transition: background-size 400ms;
@@ -108,6 +109,90 @@ p {
   aspect-ratio: var(--ratio-square);
 }
 
+.hero-texto {
+  transition: 0.3s ease all;
+}
+
+.hero-texto:hover {
+  color: orange;
+}
+
+h1 {
+  cursor: default;
+}
+
+.span-1 {
+  cursor: default;
+}
+
+.span-1 {
+  transition: 0.3s ease all;
+}
+
+.span-1:hover {
+  color: orange;
+}
+
+.span-2 {
+  cursor: default;
+}
+
+.span-2 {
+  transition: 0.3s ease all;
+}
+
+.span-2:hover {
+  color: orange;
+}
+
+.span-3 {
+  cursor: default;
+}
+
+.span-3 {
+  transition: 0.3s ease all;
+}
+
+.span-3:hover {
+  color: orange;
+}
+
+.span-4 {
+  cursor: default;
+}
+
+.span-4 {
+  transition: 0.3s ease all;
+}
+
+.span-4:hover {
+  color: orange;
+}
+
+.span-5 {
+  cursor: default;
+}
+
+.span-5 {
+  transition: 0.3s ease all;
+}
+
+.span-5:hover {
+  color: orange;
+}
+
+.novedades-1 {
+  cursor: default;
+  background: linear-gradient(to right, rgb(33, 33, 33), rgb(33, 33, 33)), linear-gradient(to right, rgb(255, 0, 0), rgb(255, 0, 180), rgb(0, 100, 200));
+  background-size: 100% 0px, 0 0px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+.novedades-1:hover {
+  background-size: 0 5px, 100% 5px;
+}
+
 .main {
   display: flex;
   flex-wrap: wrap;
@@ -117,12 +202,67 @@ p {
 .main_img_link {
   padding: 0;
   margin: 30px;
+  border-radius: 40px;
+  transition: 0.3s ease all;
+}
+.main_img_link:hover {
+  transform: scale(1.1);
 }
 
 .carta {
   border-radius: 10px;
   height: 20vw;
   padding: 0;
+}
+
+@media (max-width: 575px) {
+  .main {
+    padding-top: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main_img_link {
+    height: auto;
+  }
+  .carta {
+    height: 400px;
+  }
+}
+.hero-image {
+  padding-top: 30px;
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://img2.wallspic.com/crops/4/6/8/1/7/171864/171864-anime-estetica_del_asesino_de_demonios-tanjiro_kamado-nezuko_kamado-asesino_de_demonios_kimetsu_no_yaiba-1920x1080.jpg");
+  background-attachment: fixed;
+  height: 51vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .hero-image {
+    padding-top: 30px;
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://img2.wallspic.com/crops/4/6/8/1/7/171864/171864-anime-estetica_del_asesino_de_demonios-tanjiro_kamado-nezuko_kamado-asesino_de_demonios_kimetsu_no_yaiba-1920x1080.jpg");
+    background-attachment: fixed;
+    height: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

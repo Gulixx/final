@@ -16,6 +16,7 @@ body {
   z-index: 100;
 }
 .navbar_logo-img {
+  padding: 0;
   height: 80px;
   transition: 0.3s ease all;
 }
@@ -26,7 +27,7 @@ body {
   color: white;
   padding: 32px;
   background: linear-gradient(to right, rgb(33, 33, 33), rgb(33, 33, 33)), linear-gradient(to right, rgb(255, 0, 0), rgb(255, 0, 180), rgb(0, 100, 200));
-  background-size: 100% 1px, 0 1px;
+  background-size: 100% 0px, 0 0px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
   transition: background-size 400ms;

@@ -7,12 +7,32 @@
 .main_img_link {
   padding: 0;
   margin: 30px;
+  border-radius: 40px;
+  transition: 0.3s ease all;
+}
+.main_img_link:hover {
+  transform: scale(1.1);
 }
 
 .carta {
   border-radius: 10px;
   height: 20vw;
   padding: 0;
+}
+
+@media (max-width: 575px) {
+  .main {
+    padding-top: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main_img_link {
+    height: auto;
+  }
+  .carta {
+    height: 400px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

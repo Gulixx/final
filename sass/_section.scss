@@ -69,4 +69,58 @@ h1{
         aspect-ratio: var(--ratio-square);
 
       }
+
+      .hero-texto{
+        transition: .3s ease all;
+      }
+
+      .hero-texto:hover{
+        color: orange;
+      }
+      
+
+      h1{
+        cursor: default;
+      }
+
+      @for $iterador from 1 through 5{
+        .span-#{$iterador}{
+            cursor: default;
+        }
+
+        .span-#{$iterador}{
+            transition: .3s ease all;
+        }
+        .span-#{$iterador}:hover{
+            color: orange;
+        }
+      }
+
+      .novedades{
+
+        &-1{
+            cursor: default;
+            background:
+            
+            linear-gradient(
+              to right,
+              rgb(33, 33, 33),
+              rgb(33, 33, 33)
+            ),
+            linear-gradient(
+              to right,
+              rgba(255, 0, 0, 1),
+              rgba(255, 0, 180, 1),
+              rgba(0, 100, 200, 1)
+          );
+          background-size: 100% 0px, 0 0px;
+          background-position: 100% 100%, 0 100%;
+          background-repeat: no-repeat;
+          transition: background-size 400ms;
+
+        }
+        &-1:hover {
+            background-size: 0 5px, 100% 5px;
+          }     
+      }
       
