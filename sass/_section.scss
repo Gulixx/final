@@ -9,96 +9,100 @@ h1{
     text-align: center !important;
     padding-bottom: 30px;
     color: white;
+  }
+  
+  .section{
+  &_img{
+
+  border-radius: 30px;
+  transition: .3s ease all;
+  box-shadow: 6px 6px 28px -8px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 20px 11px 78px -25px rgba(0,0,0,0.75);
+  -moz-box-shadow: 20px 11px 78px -25px rgba(0,0,0,0.75);
+  box-shadow: 20px 11px 78px -25px rgba(0,0,0,0.75);
 }
 
-.section{
+&_img:hover{
+  transform: scale(1.2);
+  
+}
 
-        &_img{
-            border-radius: 30px;
-            transition: .3s ease all;
-            box-shadow: 6px 6px 28px -8px rgba(0,0,0,0.6);
-        }
+&_capa{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
 
-         &_img:hover{
-            transform: scale(1.1);
-        }
+&_h1{
+  background-color: #222;
+  position: relative;
+  text-align: center;
+  transition: .3s ease all;
+}
 
-        &_capa{
-                position: absolute;
-                top: 10px;
-                left: 10px;
-            }
+&_h1:hover{
+  transform: scale(1.1);
+}
+&-img{
+  
+  border-radius: 30px;
+  transition: .3s ease all;
+}
 
-            &_h1{
-                background-color: #222;
-                position: relative;
-                text-align: center;
-                transition: .3s ease all;
-            }
-
-            &_h1:hover{
-                transform: scale(1.1);
-            }
-            &-img{
-               
-                border-radius: 30px;
-                transition: .3s ease all;
-            }
-
-            &_a{
-                padding: 0;
-            }
-        }
+&_a{
+  padding: 0;
+}
+}
     }
 
     p{
-        text-align: center;
-        color: rgb(255, 255, 255);
+      text-align: center;
+      color: rgb(255, 255, 255);
     }
-
+    
     .scroll{
-        -webkit-mask-image: linear-gradient(to right, #0000, #000, #000, #0000);
-        overflow-x: auto;
-        overscroll-behavior-x: contain;
-        display: flex;
-        align-items: start;
-      }
+      -webkit-mask-image: linear-gradient(to right, #0000, #000, #000, #0000);
+      overflow-x: auto;
+      overscroll-behavior-x: contain;
+      display: flex;
+      align-items: start;
+    }
+    
+    .scroll > div {
+      block-size: var(--size-15);
+      aspect-ratio: var(--ratio-square);
       
-      .scroll > div {
-        block-size: var(--size-15);
-        aspect-ratio: var(--ratio-square);
-
-      }
-
-      .hero-texto{
-        transition: .3s ease all;
-      }
-
-      .hero-texto:hover{
-        color: orange;
-      }
+    }
+    
+    .hero-texto{
+      transition: .3s ease all;
+    }
+    
+    .hero-texto:hover{
+      color: orange;
+    }
       
-
-      h1{
+    
+    h1{
+      cursor: default;
+    }
+    
+    @for $iterador from 1 through 5{
+      .span-#{$iterador}{
         cursor: default;
       }
-
-      @for $iterador from 1 through 5{
-        .span-#{$iterador}{
-            cursor: default;
-        }
-
-        .span-#{$iterador}{
-            transition: .3s ease all;
-        }
-        .span-#{$iterador}:hover{
-            color: orange;
-        }
+      
+      .span-#{$iterador}{
+        transition: .3s ease all;
       }
-
-      .novedades{
-
-        &-1{
+      .span-#{$iterador}:hover{
+            color: orange;
+          }
+        }
+        
+        .novedades{
+          
+          &-1{
             cursor: default;
             background:
             
@@ -106,21 +110,21 @@ h1{
               to right,
               rgb(33, 33, 33),
               rgb(33, 33, 33)
-            ),
-            linear-gradient(
-              to right,
-              rgba(255, 0, 0, 1),
-              rgba(255, 0, 180, 1),
-              rgba(0, 100, 200, 1)
-          );
-          background-size: 100% 0px, 0 0px;
-          background-position: 100% 100%, 0 100%;
-          background-repeat: no-repeat;
-          transition: background-size 400ms;
-
+              ),
+              linear-gradient(
+                to right,
+                rgba(255, 0, 0, 1),
+                rgba(255, 0, 180, 1),
+                rgba(0, 100, 200, 1)
+                );
+                background-size: 100% 0px, 0 0px;
+                background-position: 100% 100%, 0 100%;
+                background-repeat: no-repeat;
+                transition: background-size 400ms;
+                
         }
         &-1:hover {
-            background-size: 0 5px, 100% 5px;
-          }     
+          background-size: 0 5px, 100% 5px;
+        }     
       }
       
