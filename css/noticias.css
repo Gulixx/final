@@ -60,7 +60,7 @@ nav {
 #header {
   padding-top: 15vw;
   height: 600px;
-  background: url(https://img.asmedia.epimg.net/resizer/DNal9NoFFokG4YvBaBX3qbws-v4=/1952x1098/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/KBIIM5AMHFEYBOZBVDSGAYVCGA.jpg);
+  background: url(https://img.asmedia.epimg.net/resizer/DNal9NoFFokG4YvBaBX3qbws-v4=/1952x1098/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/KBIIM5AMHFEYBOZBVDSGAYVCGA.jpg) center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
