@@ -67,4 +67,10 @@ nav {
   background-attachment: fixed;
 }
 
+@media (max-width: 600px) {
+  #header {
+    padding-top: 30vw;
+  }
+}
+
 /*# sourceMappingURL=noticias.css.map */
